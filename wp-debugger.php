@@ -1,16 +1,17 @@
 <?php
 /**
  * Plugin Name: Chrome WordPress Debug
- * Plugin URI: http://usabilitydynamics.com/plugins/
+ * Plugin URI: https://github.com/andypotanin/wp-debugger
  * Description: Output to console API action timers.
  * Author: Usability Dynamics, Inc.
  * Version: 0.1.0
  * Author URI: http://usabilitydynamics.com
  *
+ * Requires https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd extension for Chrome.
  */
 
 
-if( defined( 'DOING_AJAX' ) || class_exists( 'UD_ChromePhp' ) ) {
+if( defined( 'DOING_AJAX' ) || !class_exists( 'UD_ChromePhp' ) ) {
   return;
 }
 
