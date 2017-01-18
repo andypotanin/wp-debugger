@@ -1,13 +1,12 @@
 <?php
 /**
  * Plugin Name: Chrome WordPress Debug
- * Plugin URI: https://github.com/andypotanin/wp-debugger
+ * Plugin URI: http://usabilitydynamics.com/plugins/
  * Description: Output to console API action timers.
  * Author: Usability Dynamics, Inc.
  * Version: 0.1.0
  * Author URI: http://usabilitydynamics.com
  *
- * Requires https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd extension for Chrome.
  */
 
 
@@ -143,7 +142,7 @@ class UD_ChromePhp {
   );
 
   /**
-   * @var ChromePhp
+   * @var UD_ChromePhp
    */
   protected static $_instance;
 
@@ -152,7 +151,7 @@ class UD_ChromePhp {
    *
    * @var array
    */
-  protected $_processed = array();
+  private $_processed = array();
 
   /**
    * constructor
@@ -166,7 +165,7 @@ class UD_ChromePhp {
   /**
    * gets instance of this class
    *
-   * @return ChromePhp
+   * @return UD_ChromePhp
    */
   public static function getInstance() {
     if( self::$_instance === null ) {
