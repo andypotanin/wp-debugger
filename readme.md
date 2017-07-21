@@ -1,3 +1,13 @@
+### Installing
+The debugger file is best deployed as MU plugin so it can load early in the WordPress load order.
+
+Assuming you are in the root directory of WordPress, run the following terminal command:
+```bash
+curl https://raw.githubusercontent.com/andypotanin/wp-debugger/master/wp-debugger.php > wp-content/mu-plugins/wp-debugger.php
+```
+
+---
+
 Small utility for debugging WP load times.
 
  Requires https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd extension for Chrome.
